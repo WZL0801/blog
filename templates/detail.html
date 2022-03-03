@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>博客详细</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/editormd/css/editormd.min.css">
+    <script src="/assets/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div class="container">
+    {{template "header"}}
+
+    <a href="/updateIndex?id={{.Pid}}" class="stretched-link">修改博客</a>
+    <div class="row">
+        <p>ssss</p>
+        <div class="col-md-12">
+            <h1>{{.Title}}</h1>
+            {{.Content}}
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
